@@ -15,7 +15,7 @@ Binary classification task: predict whether a person has diabetes using self-rep
 | Classical ML | Logistic Regression, Random Forest, XGBoost |
 | Deep Learning | Sequential DNN (shallow & deep), Functional API (residual) |
 
-**Best model:** XGBoost (tuned) — **AUC 0.82** on the held-out test set.  
+**Best model:** XGBoost (tuned), **AUC 0.82** on the held-out test set.  
 Deep learning models reached comparable AUC (~0.82) but offered no advantage over the gradient boosting approach on this tabular dataset.
 
 ## Key Findings
