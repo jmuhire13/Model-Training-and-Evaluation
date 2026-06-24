@@ -1,4 +1,4 @@
-# Diabetes Risk Prediction — CDC Health Indicators
+# Diabetes Risk Prediction and CDC Health Indicators
 
 Binary classification task: predict whether a person has diabetes using self-reported health survey data.
 
@@ -21,12 +21,12 @@ Deep learning models reached comparable AUC (~0.82) but offered no advantage ove
 ## Key Findings
 
 - Gradient boosting outperformed all other models despite deep learning's added complexity.
-- Unlimited-depth Random Forest severely overfits (train AUC 0.9999, test AUC 0.78) — depth-limiting fixes this.
+- Unlimited-depth Random Forest severely overfits (train AUC 0.9999, test AUC 0.78), depth-limiting fixes this.
 - Top predictors: General Health self-rating, BMI, High Blood Pressure, and the engineered `Cardio_Risk_Score`.
-- Lowering the classification threshold improves recall (catching more diabetic cases) at the cost of precision — the right trade-off for a clinical screening tool.
+- Lowering the classification threshold improves recall (catching more diabetic cases) at the cost of precision, the right trade-off for a clinical screening tool.
 
 ## Run It
 
-Open `CDC_Diabetes_ML_Project.ipynb` in Jupyter or Google Colab. The notebook is fully self-contained — it fetches the dataset automatically via `ucimlrepo`.
+Open `CDC_Diabetes_ML_Project.ipynb` in Jupyter or Google Colab. The notebook is fully self-contained and it fetches the dataset automatically via `ucimlrepo`.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jmuhire13/Model-Training-and-Evaluation/blob/main/CDC_Diabetes_ML_Project.ipynb)
